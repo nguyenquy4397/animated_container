@@ -194,6 +194,9 @@ class _ConfettiWidgetState extends State<ConfettiWidget>
     } else if (widget.confettiController.state ==
         ConfettiControllerState.stopped) {
       _stopEmission();
+    } else if (widget.confettiController.state ==
+        ConfettiControllerState.forceStopped) {
+      _forceStopEmission();
     }
   }
 
@@ -229,6 +232,14 @@ class _ConfettiWidgetState extends State<ConfettiWidget>
       return;
     }
     _particleSystem.stopParticleEmission();
+  }
+
+  void _forceStopEmission() {
+    if (_particleSystem.particleSystemStatus ==
+        ParticleSystemStatus.forceStopped) {
+      return;
+    }
+    _particleSystem.forceStopParticleEmission();
   }
 
   void _startAnimation() {
@@ -397,6 +408,13 @@ class ConfettiController extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// don't loop and clear all particle
+  void forceStopped() {
+    _state = ConfettiControllerState.forceStopped;
+    notifyListeners();
+  }
+
+  /// don't loop if shouldLoop: true
   void stop() {
     _state = ConfettiControllerState.stopped;
     notifyListeners();

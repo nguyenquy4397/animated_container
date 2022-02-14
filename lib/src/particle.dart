@@ -11,6 +11,7 @@ enum ParticleSystemStatus {
   started,
   finished,
   stopped,
+  forceStopped,
 }
 
 class ParticleSystem extends ChangeNotifier {
@@ -107,6 +108,10 @@ class ParticleSystem extends ChangeNotifier {
     _particleSystemStatus = ParticleSystemStatus.started;
   }
 
+  void forceStopParticleEmission() {
+    _particleSystemStatus = ParticleSystemStatus.forceStopped;
+  }
+
   void finishParticleEmission() {
     _particleSystemStatus = ParticleSystemStatus.finished;
   }
@@ -133,6 +138,10 @@ class ParticleSystem extends ChangeNotifier {
       if (chanceToGenerate < _frequency) {
         _particles.addAll(_generateParticles(number: _numberOfParticles));
       }
+    }
+
+    if (_particleSystemStatus == ParticleSystemStatus.forceStopped) {
+      _forceClean();
     }
 
     if (_particleSystemStatus == ParticleSystemStatus.stopped &&
@@ -217,6 +226,12 @@ class ParticleSystem extends ChangeNotifier {
     if (_particleSystemPosition != null && _screenSize != null) {
       _particles
           .removeWhere((particle) => _isOutsideOfBorder(particle.location));
+    }
+  }
+
+  void _forceClean() {
+    if (_particleSystemPosition != null && _screenSize != null) {
+      _particles.removeRange(0, _particles.length);
     }
   }
 
