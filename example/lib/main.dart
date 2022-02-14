@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:animated_container/confetti.dart';
 import 'package:flutter/material.dart';
 
@@ -67,21 +65,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 color: Colors.redAccent,
               ),
             ),
-            Stack(
-              alignment: Alignment.center,
-              children: [
-                Image.asset('assets/congratulation.png'),
-                ConfettiWidget(
-                  confettiController: _controllerCenter,
-                  blastDirectionality: BlastDirectionality.explosive,
-                  blastDirection: -pi / 2,
-                  maxBlastForce: 120,
-                  minBlastForce: 10,
-                  numberOfParticles: 100,
-                  gravity: 0.3,
-                  createParticlePaths: const [ConfettiUtils.drawStar],
-                ),
-              ],
+            ConfettiWidget(
+              child: Image.asset('assets/congratulation.png'),
+              confettiController: _controllerCenter,
+              isBackground: true,
             ),
           ],
         ),

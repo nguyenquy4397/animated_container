@@ -14,20 +14,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1ca7fae-c693-4d2b-8f98-b54a61469e6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/example/assets/congratulation.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/confetti_widget.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/confetti.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/confetti.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/confetti.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/confetti.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/enums/confetti_controller_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/enums/confetti_controller_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/particle.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/particle.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -114,22 +117,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="refactor: delete android, ios, macos folder" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1355" height="368" key="GridCell.Tab.0.bottom" timestamp="1644827694365">
+    <state width="1355" height="368" key="GridCell.Tab.0.bottom" timestamp="1644830335823">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
-    <state width="1355" height="368" key="GridCell.Tab.0.bottom/0.25.2560.1330@0.25.2560.1330" timestamp="1644827694365" />
-    <state width="1355" height="368" key="GridCell.Tab.0.center" timestamp="1644827694364">
+    <state width="1355" height="368" key="GridCell.Tab.0.bottom/0.25.2560.1330@0.25.2560.1330" timestamp="1644830335823" />
+    <state width="1355" height="368" key="GridCell.Tab.0.center" timestamp="1644830335822">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
-    <state width="1355" height="368" key="GridCell.Tab.0.center/0.25.2560.1330@0.25.2560.1330" timestamp="1644827694364" />
-    <state width="1355" height="368" key="GridCell.Tab.0.left" timestamp="1644827694364">
+    <state width="1355" height="368" key="GridCell.Tab.0.center/0.25.2560.1330@0.25.2560.1330" timestamp="1644830335822" />
+    <state width="1355" height="368" key="GridCell.Tab.0.left" timestamp="1644830335822">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
-    <state width="1355" height="368" key="GridCell.Tab.0.left/0.25.2560.1330@0.25.2560.1330" timestamp="1644827694364" />
-    <state width="1355" height="368" key="GridCell.Tab.0.right" timestamp="1644827694365">
+    <state width="1355" height="368" key="GridCell.Tab.0.left/0.25.2560.1330@0.25.2560.1330" timestamp="1644830335822" />
+    <state width="1355" height="368" key="GridCell.Tab.0.right" timestamp="1644830335823">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>
-    <state width="1355" height="368" key="GridCell.Tab.0.right/0.25.2560.1330@0.25.2560.1330" timestamp="1644827694365" />
+    <state width="1355" height="368" key="GridCell.Tab.0.right/0.25.2560.1330@0.25.2560.1330" timestamp="1644830335823" />
+    <state x="629" y="429" key="RollbackChangesDialog" timestamp="1644830251702">
+      <screen x="0" y="25" width="2560" height="1330" />
+    </state>
+    <state x="629" y="429" key="RollbackChangesDialog/0.25.2560.1330@0.25.2560.1330" timestamp="1644830251702" />
     <state x="339" y="341" key="SettingsEditor" timestamp="1644814624619">
       <screen x="0" y="25" width="2560" height="1330" />
     </state>

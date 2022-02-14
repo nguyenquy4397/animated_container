@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 import 'enums/blast_directionality.dart';
 import 'enums/confetti_controller_state.dart';
 
-class ConfettiWidget extends StatefulWidget {
-  const ConfettiWidget({
+class ConfettiEffect extends StatefulWidget {
+  const ConfettiEffect({
     Key? key,
     required this.confettiController,
     this.emissionFrequency = 0.02,
@@ -128,10 +128,10 @@ class ConfettiWidget extends StatefulWidget {
   final Widget? child;
 
   @override
-  _ConfettiWidgetState createState() => _ConfettiWidgetState();
+  _ConfettiEffectState createState() => _ConfettiEffectState();
 }
 
-class _ConfettiWidgetState extends State<ConfettiWidget>
+class _ConfettiEffectState extends State<ConfettiEffect>
     with SingleTickerProviderStateMixin {
   final GlobalKey _particleSystemKey = GlobalKey();
 
