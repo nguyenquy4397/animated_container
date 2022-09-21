@@ -49,28 +49,20 @@ class _MyHomePageState extends State<MyHomePage> {
                   icon: const Icon(Icons.arrow_back))
               : null,
         ),
-        body: IndexedStack(
-          index: _index,
-          alignment: Alignment.center,
-          children: [
-            IconButton(
+        body: ConfettiWidget(
+          child: Container(
+            child: TextButton(
+              child: const Text('bruhhhh'),
               onPressed: () {
-                setState(() {
-                  _index = 1;
-                });
                 _controllerCenter.play();
               },
-              icon: const Icon(
-                Icons.card_giftcard_sharp,
-                color: Colors.redAccent,
-              ),
             ),
-            ConfettiWidget(
-              child: Image.asset('assets/congratulation.png'),
-              confettiController: _controllerCenter,
-              isBackground: true,
-            ),
-          ],
+            color: Colors.blueGrey,
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+          ),
+          confettiController: _controllerCenter,
+          isBackground: false,
         ),
       ),
     );
