@@ -29,11 +29,10 @@ class _ConfettiWidgetState extends State<ConfettiWidget> {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        if (!widget.isBackground)
-          Align(
-            child: widget.child,
-            alignment: Alignment.center,
-          ),
+        Align(
+          child: widget.child,
+          alignment: Alignment.center,
+        ),
         ConfettiEffect(
           confettiController: widget.confettiController,
           blastDirectionality: BlastDirectionality.explosive,
@@ -44,11 +43,6 @@ class _ConfettiWidgetState extends State<ConfettiWidget> {
           gravity: 0.3,
           createParticlePaths: const [ConfettiUtils.drawStar],
         ),
-        if (widget.isBackground)
-          Align(
-            child: widget.child,
-            alignment: Alignment.center,
-          ),
       ],
     );
   }
